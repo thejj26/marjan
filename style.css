@@ -98,7 +98,6 @@ span{
 }
 .green{
   background-color: #65b32e;
-  border-top-left-radius:30px;
 }
 .red {
   background-color: #e7302a;
@@ -112,7 +111,7 @@ span{
 }
 .purple {
   background-color: #bb49dd;
-
+  border-top-left-radius:30px;
 }
 .yellow {
   background-color: #ffe204;
