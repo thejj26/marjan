@@ -1,21 +1,25 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
+
 .maxwidth {
   max-width: 100vw;
   height: auto;
 }
+
 .container {
   padding: 0 10px 0 10px;
   height: 100vh;
   max-height: 100vh;
 }
+
 .main {
   width: 100%;
   height: 100vh;
 }
-body{
+
+body {
   background-color: #00553A;
   color: #fff;
 }
@@ -24,6 +28,7 @@ body{
   margin-top: 40px;
   padding-bottom: 25px;
 }
+
 .right img {
   padding: 30px 0 0 15px;
   height: 45%;
@@ -35,60 +40,75 @@ body{
   padding-left: 3%;
   position: relative;
 }
-.left img{
+
+.left>img {
   height: 250px;
   width: auto;
 }
-.left h1{
+
+.left h1 {
   font-size: 50px;
   margin: 150px 0 20px 0;
 
 }
-.left h1, .left span{
+
+.left h1,
+.left span {
   margin-left: 1%;
 }
-.quote{
+
+.quote {
   position: absolute;
   top: 5%;
   right: 5%;
   max-width: 357px;
 }
-blockquote{
+
+blockquote {
   font-family: 'Kaushan Script', cursive;
   font-size: 30px;
 }
-span{
+
+span {
   display: block;
   margin-top: 30px;
 }
-.bottom{
+
+.bottom {
   position: absolute;
   bottom: 100px;
 }
-.bottom > img{
+
+.bottom>img {
   display: inline-block;
   margin: 0 15px;
   width: 140px;
   height: auto;
 }
+
 .right {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .right h2 {
   font-size: 45px;
   margin-top: 15%;
   margin-bottom: 8%;
 }
-.right h2, .right p {
+
+.right h2,
+.right p {
   margin-left: 7%;
 }
+
 .right div {
   height: 50vh;
   width: 33%;
 }
+
 .right div:hover {
   background-color: #00553A;
 }
@@ -96,23 +116,73 @@ span{
 .flex {
   display: flex;
 }
-.green{
+
+.green {
   background-color: #65b32e;
 }
+
 .red {
   background-color: #e7302a;
 }
+
 .blue {
   background-color: #01acff;
 }
+
 .orange {
   background-color: #f8ae4e;
-  border-bottom-left-radius:30px;
+  border-bottom-left-radius: 30px;
 }
+
 .purple {
   background-color: #bb49dd;
-  border-top-left-radius:30px;
+  border-top-left-radius: 30px;
 }
+
 .yellow {
   background-color: #ffe204;
+}
+
+@media only screen and (max-width: 1650px) {
+  .left>img {
+    height: 230px;
+  }
+
+  blockquote {
+    font-size: 28px;
+  }
+
+  .quote {
+    max-width: 330px;
+  }
+
+  span {
+    margin-top: 26px;
+  }
+
+  .right h2 {
+    font-size: 38px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .left>img {
+    height: 205px;
+  }
+
+  blockquote {
+    font-size: 24px;
+  }
+
+  .quote {
+    max-width: 285px;
+  }
+
+  span {
+    margin-top: 26px;
+  }
+
+  .right h2 {
+    font-size: 38px;
+  }
 }
