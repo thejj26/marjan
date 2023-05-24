@@ -144,6 +144,89 @@ span {
   background-color: #ffe204;
 }
 
+/*desktop*/
+@media only screen and (max-width:1650px) {
+  .top>img {
+    height: 200px;
+  }
+
+  .right h2 {
+    font-size: 36px;
+    margin-right: 5%;
+    margin-bottom: 0;
+    margin-top: 2%;
+  }
+
+  .left span {
+    margin-right: 40px;
+  }
+
+  .bottom img {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width:1440px) {
+  .top>img {
+    height: 150px;
+  }
+
+  .right img {
+    height: 40%;
+  }
+
+  .right h2 {
+    font-size: 32px;
+  }
+
+  .quote {
+    top: 2%;
+  }
+}
+
+@media only screen and (max-width:1350px) {
+  .top>img {
+    height: 120px;
+  }
+
+  blockquote {
+    font-size: 20px;
+  }
+
+  .left span {
+    margin-top: 0;
+  }
+
+  .quote span {
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  .left {
+    padding-left: 1%;
+  }
+
+  .right h2 {
+    font-size: 28px;
+  }
+
+  .left h1 {
+    font-size: 46px;
+  }
+
+}
+
+@media only screen and (max-width:1024px) {
+  .left h1 {
+    font-size: 42px;
+  }
+
+  .left h1,
+  .left span {
+    margin-left: 0;
+  }
+}
+
 /*mobitel*/
 @media only screen and (max-width: 768px) {
   .container {
@@ -152,7 +235,8 @@ span {
     padding-bottom: 500px !important;
   }
 
-  .container, .main{
+  .container,
+  .main {
     max-height: unset;
     height: auto;
   }
@@ -259,16 +343,16 @@ span {
     width: calc(100vw - 80px);
   }
 
-  .bottom img{
+  .bottom img {
     margin: 0;
     padding: 0;
-    width:100%;
-    height: auto ;
+    width: 100%;
+    height: auto;
     grid-column: span 1;
     align-self: center;
   }
 
-  .bottom p{
+  .bottom p {
     grid-column: span 2;
     font-size: 20px;
   }
