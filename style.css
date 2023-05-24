@@ -144,241 +144,132 @@ span {
   background-color: #ffe204;
 }
 
-@media only screen and (max-width: 1650px) {
-  .top>img {
-    height: 230px;
+/*mobitel*/
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 0 40px;
+    position: relative;
+    padding-bottom: 500px !important;
   }
 
-  blockquote {
-    font-size: 28px;
+  .container, .main{
+    max-height: unset;
+    height: auto;
   }
 
-  .quote {
-    max-width: 330px;
+  .main.flex {
+    flex-direction: column;
   }
 
-  span {
-    margin-top: 26px;
-  }
-
-  .right h2 {
-    font-size: 38px;
-  }
-}
-
-@media only screen and (max-width: 1440px) {
-  .top>img {
-    height: 205px;
-  }
-
-  blockquote {
-    font-size: 24px;
+  .left {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+    position: unset;
   }
 
   .quote {
-    max-width: 285px;
-  }
-
-  span {
-    margin-top: 26px;
-  }
-
-  .right h2 {
-    font-size: 38px;
-  }
-
-  .bottom>img {
-    width: 100px;
-  }
-}
-
-@media only screen and (max-width: 1350px) {
-  .top>img {
-    height: 160px;
+    position: static;
+    max-width: fit-content;
+    margin-top: 32px;
   }
 
   blockquote {
-    font-size: 20px;
+    font-size: 18px;
   }
 
-  .quote {
-    max-width: 240px;
-  }
-
-  span {
-    margin-top: 20px;
+  .quote span {
     font-size: 12px;
-  }
-
-  .right h2 {
-    font-size: 32px;
-  }
-
-  .bottom>img {
-    width: 100px;
-  }
-
-  .left h1 {
-    font-size: 42px;
-  }
-
-  p {
-    font-size: small;
-  }
-}
-
-@media only screen and (max-width: 1125px) {
-  .top>img {
-    height: 150px;
-  }
-
-  blockquote {
-    font-size: 16px;
-  }
-
-  .quote {
-    max-width: 190px;
-  }
-
-  span {
     margin-top: 16px;
-    font-size: 11px;
   }
 
-  .right h2 {
-    font-size: 26px;
+  .top {
+    display: flex;
+    justify-content: space-between;
   }
 
-  .bottom>img {
+  .top>img {
     width: 80px;
+    margin-top: 12px;
+    height: auto;
   }
 
   .left h1 {
-    font-size: 42px;
-    margin: 0 0 15px 0;
-  }
-}
-
-@media only screen and (max-width: 950px) {
-  .title {
-    margin-top: 25px;
-    padding-bottom: 20px;
+    margin-top: 60px;
+    font-size: 56px;
+    margin-left: 0;
   }
 
-  .top>img {
-    height: 120px;
-  }
-
-  blockquote {
-    font-size: 14px;
-  }
-
-  .quote {
-    max-width: 155px;
-  }
-
-  span {
-    margin-top: 10px;
-    font-size: 9px;
-  }
-
-  .right h2 {
+  .left span {
+    margin-left: 0;
     font-size: 20px;
   }
 
-  .bottom>img {
-    width: 50px;
+  .right {
+    width: 100%;
+    margin: 60px 0 0 0;
   }
 
-  .left h1 {
-    font-size: 28px;
-    margin: 0 0 10px 0;
+  .right div {
+    height: 320px;
+    width: 50%;
   }
 
-  p {
-    font-size: 8px;
-  }
-}
-
-@media only screen and (max-width: 730px) {
-  .top>img {
-    height: 100px;
-  }
-
-  blockquote {
-    font-size: 10px;
-  }
-
-  .quote {
-    max-width: 122px;
-  }
-
-  span {
-    margin-top: 8px;
-    font-size: 7px;
-  }
-
-  .right h2 {
-    font-size: 17px;
-  }
-
-  .bottom>img {
-    width: 42px;
-    margin: 0px 6px;
-  }
-
-  p {
-    font-size: 6px;
-  }
-
-  .left h1 {
-    font-size: 22px;
-    margin: 0 0 8px 0;
-  }
   .right img {
-    padding: 20px 0 0 10px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .top>img {
-    height: 80px;
-  }
-
-  blockquote {
-    font-size: 7px;
-  }
-
-  .quote {
-    max-width: 85px;
-  }
-
-  span {
-    margin-top: 4px;
-    font-size: 6px;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 16px;
+    width: 45%;
+    height: auto;
   }
 
   .right h2 {
-    font-size: 11px;
+    margin: 20px 0 0 30px;
+    font-size: 36px;
   }
 
-  .bottom>img {
-    width: 36px;
-    margin: 0px 4px;
+  .border {
+    display: flex;
+    flex-direction: column;
   }
 
-  p {
-    font-size: 6px;
+  .red {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 30px;
   }
 
-  .left h1 {
+  .orange {
+    border-bottom-left-radius: 0;
+  }
+
+  .yellow {
+    border-bottom-left-radius: 30px;
+  }
+
+  .blue {
+    border-bottom-right-radius: 30px;
+  }
+
+  .bottom {
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    width: calc(100vw - 80px);
+  }
+
+  .bottom img{
+    margin: 0;
+    padding: 0;
+    width:100%;
+    height: auto ;
+    grid-column: span 1;
+    align-self: center;
+  }
+
+  .bottom p{
+    grid-column: span 2;
     font-size: 20px;
-    margin: 0 0 8px 0;
   }
-}
-
-/*MOBITEL*/
-
-@media only screen and (max-width: 500px) {
-  
 }
