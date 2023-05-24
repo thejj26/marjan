@@ -260,4 +260,125 @@ span {
 }
 
 @media only screen and (max-width: 950px) {
+  .title {
+    margin-top: 25px;
+    padding-bottom: 20px;
+  }
+
+  .top>img {
+    height: 120px;
+  }
+
+  blockquote {
+    font-size: 14px;
+  }
+
+  .quote {
+    max-width: 155px;
+  }
+
+  span {
+    margin-top: 10px;
+    font-size: 9px;
+  }
+
+  .right h2 {
+    font-size: 20px;
+  }
+
+  .bottom>img {
+    width: 50px;
+  }
+
+  .left h1 {
+    font-size: 28px;
+    margin: 0 0 10px 0;
+  }
+
+  p {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 730px) {
+  .top>img {
+    height: 100px;
+  }
+
+  blockquote {
+    font-size: 10px;
+  }
+
+  .quote {
+    max-width: 122px;
+  }
+
+  span {
+    margin-top: 8px;
+    font-size: 7px;
+  }
+
+  .right h2 {
+    font-size: 17px;
+  }
+
+  .bottom>img {
+    width: 42px;
+    margin: 0px 6px;
+  }
+
+  p {
+    font-size: 6px;
+  }
+
+  .left h1 {
+    font-size: 22px;
+    margin: 0 0 8px 0;
+  }
+  .right img {
+    padding: 20px 0 0 10px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .top>img {
+    height: 80px;
+  }
+
+  blockquote {
+    font-size: 7px;
+  }
+
+  .quote {
+    max-width: 85px;
+  }
+
+  span {
+    margin-top: 4px;
+    font-size: 6px;
+  }
+
+  .right h2 {
+    font-size: 11px;
+  }
+
+  .bottom>img {
+    width: 36px;
+    margin: 0px 4px;
+  }
+
+  p {
+    font-size: 6px;
+  }
+
+  .left h1 {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+  }
+}
+
+/*MOBITEL*/
+
+@media only screen and (max-width: 500px) {
+  
 }
