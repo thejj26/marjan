@@ -287,7 +287,7 @@ span {
   }
 
   .bottom>img {
-    width: 50px;
+    width: 60px;
   }
 
   .left h1 {
@@ -299,86 +299,101 @@ span {
     font-size: 8px;
   }
 }
-
+/*mobitel*/
 @media only screen and (max-width: 730px) {
-  .top>img {
-    height: 100px;
+
+  .main.flex {
+    flex-direction: column;
   }
 
-  blockquote {
-    font-size: 10px;
+  .left {
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
   }
 
   .quote {
-    max-width: 122px;
+    position: static;
+    max-width: fit-content;
+    margin-top: 32px;
+    margin-right: 32px;
   }
 
-  span {
-    margin-top: 8px;
-    font-size: 7px;
+  blockquote {
+    font-size: 18px;
   }
 
-  .right h2 {
-    font-size: 17px;
+  .quote span {
+    font-size: 12px;
+    margin-top: 16px;
   }
 
-  .bottom>img {
-    width: 42px;
-    margin: 0px 6px;
+  .top {
+    display: flex;
+    justify-content: space-between;
   }
 
-  p {
-    font-size: 6px;
+  .top>img {
+    width: 80px;
+    margin-top: 12px;
   }
 
   .left h1 {
-    font-size: 22px;
-    margin: 0 0 8px 0;
+    margin-top: 60px;
+    padding-left: 20px;
   }
+
+  .left span {
+    margin-left: 0;
+    font-size: 12px;
+    padding-left: 20px;
+  }
+
+  .right {
+    width: 90%;
+    margin: 60px auto 0 auto;
+  }
+
+  .right div {
+    height: 250px;
+    width: 50%;
+  }
+
   .right img {
-    padding: 20px 0 0 10px;
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .top>img {
-    height: 80px;
-  }
-
-  blockquote {
-    font-size: 7px;
-  }
-
-  .quote {
-    max-width: 85px;
-  }
-
-  span {
-    margin-top: 4px;
-    font-size: 6px;
+    padding: 0 12px;
+    margin-top: 16px;
+    width: 45%;
+    height: auto;
   }
 
   .right h2 {
-    font-size: 11px;
+    margin: 20px 0 0 0;
+    padding: 0 20px;
   }
 
-  .bottom>img {
-    width: 36px;
-    margin: 0px 4px;
+  .border {
+    display: flex;
+    flex-direction: column;
   }
 
-  p {
-    font-size: 6px;
+  .red {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 30px;
   }
 
-  .left h1 {
-    font-size: 20px;
-    margin: 0 0 8px 0;
+  .orange {
+    border-bottom-left-radius: 0;
   }
-}
 
-/*MOBITEL*/
+  .yellow {
+    border-bottom-left-radius: 30px;
+  }
 
-@media only screen and (max-width: 500px) {
-  
+  .blue {
+    border-bottom-right-radius: 30px;
+  }
+
+  .bottom {
+    display: none;
+  }
 }
