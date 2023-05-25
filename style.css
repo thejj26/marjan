@@ -45,8 +45,11 @@ body {
 }
 
 .top>img {
-  height: 250px;
-  width: auto;
+  width: 250px;
+  height: auto;
+  position: absolute;
+  top: -40px;
+  left: -10px;
 }
 
 .left h1 {
@@ -77,6 +80,7 @@ span {
 
 .bottom {
   padding-bottom: 5%;
+  visibility: hidden;
 }
 
 .bottom>img {
@@ -145,10 +149,6 @@ span {
 
 /*desktop*/
 @media only screen and (max-width:1650px) {
-  .top>img {
-    height: 200px;
-  }
-
   .right h2 {
     font-size: 36px;
     margin-right: 5%;
@@ -167,7 +167,8 @@ span {
 
 @media only screen and (max-width:1440px) {
   .top>img {
-    height: 150px;
+    width: 200px;
+    height: auto;
   }
 
   .right img {
@@ -185,7 +186,8 @@ span {
 
 @media only screen and (max-width:1350px) {
   .top>img {
-    height: 120px;
+    width: 150px;
+    height: auto;
   }
 
   blockquote {
@@ -218,6 +220,7 @@ span {
 @media only screen and (max-width:1024px) {
   .left h1 {
     font-size: 42px;
+    margin-top: 80px;
   }
 
   .left h1,
@@ -228,10 +231,17 @@ span {
 
 /*mobitel*/
 @media only screen and (max-width: 768px) {
+
+  .top>img {
+    width: 200px;
+    height: auto;
+    left: 0;
+    top: 0;
+  }
+
   .container {
     padding: 0 40px;
     position: relative;
-    padding-bottom: 500px !important;
   }
 
   .container,
@@ -251,13 +261,13 @@ span {
     position: unset;
   }
 
+  .top{
+    display: flex;
+    justify-content: end;
+  }
   .quote {
     position: static;
-<<<<<<< Updated upstream
     max-width: fit-content;
-=======
-    max-width:fit-content;
->>>>>>> Stashed changes
     margin-top: 32px;
   }
 
@@ -268,17 +278,6 @@ span {
   .quote span {
     font-size: 12px;
     margin-top: 16px;
-  }
-
-  .top {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .top>img {
-    width: 80px;
-    margin-top: 12px;
-    height: auto;
   }
 
   .left h1 {
@@ -294,7 +293,7 @@ span {
 
   .right {
     width: 100%;
-    margin: 60px 0 0 0;
+    margin: 60px 0 12px 0;
   }
 
   .right div {
@@ -359,8 +358,6 @@ span {
     grid-column: span 2;
     font-size: 20px;
   }
-<<<<<<< Updated upstream
-=======
 }
 
 @media only screen and (max-width: 600px) {
@@ -397,20 +394,12 @@ span {
   .right div {
     height: 250px;
   }
-
-  .container {
-    padding-bottom: 450px !important;
-  }
 }
 
 @media only screen and (max-width: 450px) {
   .right h2 {
     margin: 12px 0 0 18px;
     font-size: 21px;
-  }
-
-  .container {
-    padding-bottom: 380px !important;
   }
 
   .right div {
@@ -433,12 +422,12 @@ span {
   .bottom {
     gap: 25px;
   }
+
   blockquote {
     font-size: 16px;
   }
-  .top>img {
-    width: 70px;
-    margin-top: 8px;
+  .top>img{
+    width: 160px;
   }
 }
 
@@ -450,7 +439,6 @@ span {
 
   .container {
     padding: 0px 30px;
-    padding-bottom: 320px !important;
   }
 
   .right div {
@@ -473,12 +461,9 @@ span {
   .bottom {
     gap: 20px;
   }
+
   blockquote {
     font-size: 14px;
-  }
-  .top>img {
-    width: 70px;
-    margin-top: 8px;
   }
 }
 
@@ -487,5 +472,4 @@ span {
     margin: 10px 0 0 15px;
     font-size: 16px;
   }
->>>>>>> Stashed changes
 }
