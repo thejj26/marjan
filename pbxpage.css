@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  .maxwidth {
+    max-width: 1440px;
+    margin: auto;
+    height: auto;
+  }
+  .container {
+    padding: 0 70px 0 70px;
+  }
+  .maxwidth {
+    max-width: 1440px;
+    margin: auto;
+    height: auto;
+  }
+  .container {
+    padding: 0 70px 0 70px;
+  }
+  .main {
+    justify-content: center;
+    text-align: center;
+  }
+ .pbx img{
+   max-height: 600px;
+    width: auto;
+  }
+  h1{
+    padding: 50px 0px 50px 0px;
+    font-size: 40px;
+  }
+  ul{
+    list-style:none;
+    text-align: left;
+    align-items: center;
+  }
+  ul li img {
+    padding-right: 7px;
+}
+  .flex{
+    padding-top: 50px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .flex ul:not(:first-of-type){
+padding-left: 50px;
+  }
+  .flex ul:not(:last-of-type){
+    padding-right: 50px;
+    border-right: solid black 1px;
+  }
+  @media only screen and (max-width: 1440px) {
+  .flex {
+    padding-top: 30px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+h1 {
+    padding: 50px 0px 34px 0px;
+    font-size: 40px;
+}
+  }
+  @media only screen and (max-width: 730px) {
+    .pbx img {
+        max-height: 285px;
+        width: auto;
+    }
+    .flex ul:not(:first-of-type){
+        padding-left: 0px;
+        padding-top: 20px;
+          }
+          .flex ul:not(:last-of-type){
+            border-right: none;
+            padding-right: 0px;
+            border-bottom: solid black 1px;
+            padding-bottom: 20px;
+          }
+          .flex {
+            padding-top: 50px;
+            display: block;
+            margin: auto;
+            width: 25%;
+            text-align: center;
+        }
+    }
+
+  @media only screen and (max-width: 425px) {
+    .pbx img {
+        max-height: 285px;
+        width: auto;
+    }
+    .flex ul:not(:first-of-type){
+        padding-left: 0px;
+        padding-top: 20px;
+          }
+          .flex ul:not(:last-of-type){
+            border-right: none;
+            padding-right: 0px;
+            border-bottom: solid black 1px;
+            padding-bottom: 20px;
+          }
+          .flex {
+            padding-top: 50px;
+            display: block;
+            margin: auto;
+            width: 50%;
+        }
+  }
+  @media only screen and (max-width: 375px){
+
+    .container {
+        padding: 0 25px 0 25px;
+    }
+.pbx img {
+    max-height: 232px;
+    width: auto;
+}
+
+h1{
+    font-size: 35px;
+}
+  }
+  @media only screen and (min-width: 2000px) {
+    .pbx img {
+        max-height: 1000px;
+        width: auto;
+    }
+    .pbx img {
+        max-height: 760px;
+        width: auto;
+    }
+    h1 {
+        padding: 50px 0px 50px 0px;
+        font-size: 65px;
+    }
+    .flex {
+        padding-top: 50px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: xx-large;
+    }
+}
