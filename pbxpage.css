@@ -2,13 +2,9 @@
     margin: 0;
     padding: 0;
   }
-  .maxwidth {
-    max-width: 1440px;
-    margin: auto;
-    height: auto;
-  }
-  .container {
-    padding: 0 70px 0 70px;
+body{
+  background-color: #00553A;
+  color: white;
   }
   .maxwidth {
     max-width: 1440px;
@@ -18,29 +14,49 @@
   .container {
     padding: 0 70px 0 70px;
   }
+
   .main {
-    justify-content: center;
     text-align: center;
   }
  .pbx img{
    max-height: 600px;
     width: auto;
   }
+  
   h1{
-    padding: 50px 0px 50px 0px;
+    padding:100px 0px 0 0;
     font-size: 40px;
   }
-  ul{
-    list-style:none;
+
+ .agenda ul{
+  list-style:none;
     text-align: left;
     align-items: center;
   }
-  ul li img {
+  .white path{
+    fill:#FFF;
+  }
+.agenda li{
+  display: flex;
+    align-items: center;
+  }
+ .agenda ul li img {
     padding-right: 7px;
 }
+.intro{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.intro img{
+  height: 250px;
+  width: auto;
+  position: absolute;
+  left: 70px;
+}
+.agenda{
+  justify-content: center;
+}
   .flex{
-    padding-top: 50px;
-    justify-content: center;
     display: flex;
     flex-wrap: wrap;
   }
@@ -49,8 +65,9 @@ padding-left: 50px;
   }
   .flex ul:not(:last-of-type){
     padding-right: 50px;
-    border-right: solid black 1px;
+    border-right: solid lightgray 1px;
   }
+
   @media only screen and (max-width: 1440px) {
   .flex {
     padding-top: 30px;
@@ -63,10 +80,38 @@ h1 {
     font-size: 40px;
 }
   }
+  @media only screen and (max-width: 1440px) {
+  h1{
+    padding-top: 18px;
+  }
+  .intro img {
+    height: 180px;
+    width: auto;
+    position: absolute;
+    left: 70px;
+}
+.intro {
+  padding-bottom: 0px;
+}
+  }
+  @media only screen and (max-width: 790px) {
+    h1{
+      padding-top: 135px;
+    }
+    .intro img {
+      height: 135px;
+      width: auto;
+      position: absolute;
+      left: 70px;
+  }
+  }
   @media only screen and (max-width: 730px) {
     .pbx img {
         max-height: 285px;
         width: auto;
+    }
+    .intro img{
+      left: 35px;
     }
     .flex ul:not(:first-of-type){
         padding-left: 0px;
@@ -75,8 +120,8 @@ h1 {
           .flex ul:not(:last-of-type){
             border-right: none;
             padding-right: 0px;
-            border-bottom: solid black 1px;
             padding-bottom: 20px;
+            border-bottom: solid lightgray 1px;
           }
           .flex {
             padding-top: 50px;
@@ -88,6 +133,13 @@ h1 {
     }
 
   @media only screen and (max-width: 425px) {
+    .intro img{
+      left: 15px;
+      height: 85px;
+    }
+    h1{
+      padding-top: 100px;
+    }
     .pbx img {
         max-height: 285px;
         width: auto;
@@ -99,7 +151,7 @@ h1 {
           .flex ul:not(:last-of-type){
             border-right: none;
             padding-right: 0px;
-            border-bottom: solid black 1px;
+            border-bottom: solid lightgray 1px;
             padding-bottom: 20px;
           }
           .flex {
@@ -119,9 +171,6 @@ h1 {
     width: auto;
 }
 
-h1{
-    font-size: 35px;
-}
   }
   @media only screen and (min-width: 2000px) {
     .pbx img {
