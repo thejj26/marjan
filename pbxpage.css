@@ -36,10 +36,11 @@ body{
   .white path{
     fill:#FFF;
   }
-.agenda li{
-  display: flex;
+.agenda li {
+    margin-bottom: 10px;
+    display: flex;
     align-items: center;
-  }
+}
  .agenda ul li img {
     padding-right: 7px;
 }
