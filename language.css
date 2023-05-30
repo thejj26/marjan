@@ -3,27 +3,31 @@
     padding: 0;
 }
 
-body {
-    max-width: 1920px;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    align-items: end;
-    min-height: 100vh;
+.container {
+    padding: 0 70px;
 }
 
 body {
-    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.maxw {
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 .logo {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 70px;
 }
 
 .logo img {
-    width: 250px;
+    width: 275px;
     height: auto;
 }
 
@@ -56,14 +60,13 @@ body {
 
 footer {
     width: 100%;
-    margin: 0 10px 10px 10px;
 }
 
 footer .partners {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     column-gap: 32px;
     row-gap: 10px;
 }
@@ -99,8 +102,8 @@ footer .partners {
 }
 
 @media only screen and (max-width:1440px) {
-    .logo img{
-        width: 200px;
+    .logo img {
+        width: 180px;
     }
 
     .mts {
@@ -127,19 +130,22 @@ footer .partners {
         height: 150px;
     }
 }
-@media only screen and (max-width:1350px) {
-    .logo img {
-      width: 150px;
-    }
-}
 
 @media only screen and (max-width: 1024px) {
-    .languages img {
-        width: 28vw;
+    .container {
+        padding: 0 35px;
+    }
+
+    .logo {
+        left: 35px;
     }
 
     .logo img {
-        width: 160px;
+        width: 135px;
+    }
+
+    .languages img {
+        width: 28vw;
     }
 
     .mts {
@@ -177,32 +183,29 @@ footer .partners {
         width: 40vw;
     }
 
-    .logo img {
-        width: 200px;
-    }
-
     footer .partners {
         flex-wrap: wrap;
+        row-gap: 4px;
     }
 
     .mts {
-        width: 34%;
+        width: 150px;
     }
 
     .psm {
-        width: 34%;
+        width: 150px;
     }
 
     .dd {
-        width: 34%;
+        width: 150px;
     }
 
     .tus {
-        width: 34%;
+        width: 200px;
     }
 
     .ets {
-        width: 34%;
+        width: 150px;
     }
 
     .tzs {
@@ -211,10 +214,39 @@ footer .partners {
 }
 
 @media only screen and (max-width:475px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .logo {
+        left: 15px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
     .languages img {
         width: 50vw;
     }
-    .logo img{
-        width: 160px;
+
+    .ets {
+        width: 90px;
+    }
+
+    .psm {
+        width: 100px;
+    }
+
+    .tus {
+        width: 150px;
+    }
+
+    .dd {
+        width: 100px;
+    }
+
+    .tzs {
+        height: 80px;
     }
 }
